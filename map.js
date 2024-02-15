@@ -2,7 +2,7 @@ import config from "./config.js";
 const apiKey = config.apiKey;
 
 const script = document.createElement("script");
-script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap&libraries=maps,marker&v=beta`;
+script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=maps,marker&v=beta`;
 script.async = true;
 document.head.appendChild(script);
 
