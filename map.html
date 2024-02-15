@@ -1,46 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Dynamic Markers</title>
-        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_OnWYW8hpaFki3PRotBA5k3u5rgtlAHg&callback=initMap&libraries=maps,marker&v=beta"></script>
-        <link rel="stylesheet" href="css/style.css" />
-      </head>
-      
-      <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vild Mad</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Hej fra H1 - mad.html</h1>
         <gmp-map map-id="mapID" center="55.40375518798828,10.40237045288086" zoom="14"></gmp-map>
-      
-        <script>
-            const mapElement = document.querySelector('gmp-map[map-id="mapID"]');
-      
-          function initMap() {
-            var data = [
-              ["5290","2021-05-25 16:49:30","55.55184173583984","9.80667591094971","339","4"],
-              ["5282", "2021-05-20 14:02:08", "55.40375518798828", "10.40237045288086", "255", "4"],
-              ["5309","2021-06-02 14:51:35","55.65287399291992","12.53263664245605","255","5"],
-              // ... (add the rest of the data)
-            ];
-
-            for (var i = 0; i < data.length; i++) {
-              var values = data[i];
-              var latitude = parseFloat(values[2]);
-              var longitude = parseFloat(values[3]);
-              var locationName = "Location " + values[0];
-      
-              // Check if latitude and longitude are valid numbers
-              if (!isNaN(latitude) && !isNaN(longitude)) {
-                // Create advanced marker
-                var advancedMarker = document.createElement('gmp-advanced-marker');
-                advancedMarker.setAttribute('position', latitude + ',' + longitude);
-                advancedMarker.setAttribute('title', locationName);
-                console.log(advancedMarker);
-      
-                // Add the advanced marker to the map
-                mapElement.appendChild(advancedMarker);
-              }
-            }
-          }
-        </script>
-      </body>
+    </main>
+    <script type="module" src="map.js"></script>
+</body>
 </html>
 
 <!-- <!DOCTYPE html>
