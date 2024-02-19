@@ -123,18 +123,17 @@ main {
 h1 {
   font-family: "Roboto", sans-serif;
   color: #3e3535;
-  font-size: 3rem;
+  font-size: 5rem;
   text-align: center;
   margin-top: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 h2 {
   font-family: "Ribeye", serif;
   color: #3e3535;
-  font-size: 1.7rem;
-  margin-top: 150px;
-  margin-left: 50px;
+  font-size: 2rem;
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -229,4 +228,10 @@ p {
 
 #mapimage {
   width: 98%;
+  border-radius: 1rem;
+  margin-right: 50px;
+}
+
+.space_bottom {
+  padding-bottom: 10rem;
 }
