@@ -406,6 +406,12 @@ input[type="submit"]:hover {
     justify-content: center;
   }
   /**********************/
+  footer {
+    background-color: #4f8d9d;
+    max-width: 100%;
+    height: auto;
+    padding: 7px;
+  }
   .footer h3,
   h4 {
     color: #ffffff;
