@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/********************** header ************************/
+header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  background-color: #fff7f6;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #075607;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu li:last-child {
+  margin-right: 0px;
+}
+
+menu a:hover {
+  color: #075607;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+.burger .line {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+  background-color: #075607;
+}
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+  nav.active .menu {
+    display: block;
+    background-color: #e5e4e3;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+/************************ logo ***********************/
+#logo {
+  width: 90px;
+  height: auto;
+  display: block;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/************************* main *******************/
+main {
+  background-color: #fff7f6;
+}
+
+#heroimage {
+  width: 100% !important;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  color: #3e3535;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-family: "Ribeye", serif;
+  color: #3e3535;
+  font-size: 1.7rem;
+  margin-top: 150px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+#h2_map {
+  margin-top: 190px;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  color: #3e3535;
+  font-size: 1.5rem;
+  margin-top: 120px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  line-height: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #ebe7d7;
+  border-radius: 1rem;
+  padding: 20px;
+}
+
+.grid_1_1_1_1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+#spring {
+  width: 340px;
+  margin-left: 25px;
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+#summer {
+  width: 340px;
+  margin-left: 25px;
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+#fall {
+  width: 340px;
+  margin-left: 25px;
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+#winter {
+  width: 340px;
+  margin-left: 25px;
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.grid_1_2 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.map {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#mapimage {
+  width: 98%;
+}
+
+/************************* footer *******************/
+footer {
+  background-color: #4f8d9d;
+  padding: 100px;
+}
