@@ -385,13 +385,24 @@ input[type="submit"]:hover {
   .links a {
     display: block; /* Ensure the link covers the entire area of its container */
   }
-  .rotate-on-hover {
-    transition: transform 0.5s ease; /* Add a smooth transition effect */
+  .zoom-on-hover {
+    /* Set initial scale */
+    transform: scale(1);
+    /* Add a smooth transition effect */
+    transition: transform 0.5s ease;
   }
-  .rotate-on-hover:hover {
-    animation-name: rotate;
+  .zoom-on-hover:hover {
+    .zoom-on-hover:hover {
+      cursor: pointer;
+      /* Increase scale on hover */
+      transform: scale(1.1);
+    }
+    /*  cursor: pointer;
+    transform-origin: center;
+    transition: transform 0.5s ease; */
+    /*   animation-name: rotate;
     animation-duration: 0.5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
     /* animation-timing-function: linear; */
   }
 
@@ -453,5 +464,4 @@ input[type="submit"]:hover {
     padding: 34px;
   }
 }
-
 /** END FOOTER **/
