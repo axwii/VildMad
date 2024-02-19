@@ -1,0 +1,51 @@
+/*********************** index **********************/
+@media (min-width: 800px) {
+  h2 {
+    margin-left: 170px;
+  }
+  #h2_map {
+    margin-left: 170px;
+  }
+  h3 {
+    margin-left: 170px;
+  }
+  p {
+    margin-left: 170px;
+    margin-right: 170px;
+  }
+  #text_map {
+    margin-right: 0px;
+  }
+
+  .grid_1_1_1_1 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 70px;
+  }
+
+  #spring {
+    width: 440px;
+    margin-left: 270px;
+  }
+  #summer {
+    width: 440px;
+  }
+  #fall {
+    width: 440px;
+    margin-left: 270px;
+  }
+  #winter {
+    width: 440px;
+  }
+
+  .grid_1_2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .map {
+    margin-top: 190px;
+    margin-left: 20px;
+    margin-right: 50px;
+  }
+}
