@@ -5,26 +5,22 @@ header {
   position: sticky;
   background-color: #fff7f6;
 }
-
 nav {
   display: flex;
   align-items: center;
   margin-right: 50px;
 }
-
 .menu {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 .menu li {
   margin-right: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
 .menu a {
   display: block;
   padding: 10px;
@@ -35,15 +31,12 @@ nav {
   transition: color 0.3s;
   text-align: end;
 }
-
 .menu li:last-child {
   margin-right: 0px;
 }
-
 menu a:hover {
   color: #075607;
 }
-
 .burger {
   width: 30px;
   height: 20px;
@@ -83,16 +76,20 @@ menu a:hover {
     display: block;
     background-color: #e5e4e3;
     position: absolute;
-    top: 60px;
+    top: 110px;
     left: 0;
     width: 100%;
-    z-index: 1;
+    height: 200%;
+    /*  z-index: 1; */
   }
   nav.active .menu li {
     margin: 10px 20px;
   }
   nav.active .menu a {
     font-size: 24px;
+  }
+  nav.active .menu a:hover {
+    color: #7bbf8a;
   }
 }
 /*********************** logo *************************/
@@ -101,7 +98,7 @@ menu a:hover {
   height: auto;
   display: block;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 40px;
   margin-bottom: 20px;
 }
 /********************** footer ************************/
@@ -127,7 +124,7 @@ h4 {
 .radio-row input[type="radio"] {
   margin-right: 6px;
   margin-top: 16px;
-  max-width: 20px;
+  max-width: 20%;
 }
 .radio-row label {
   white-space: nowrap;

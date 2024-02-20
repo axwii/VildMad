@@ -12,111 +12,22 @@ body {
   color: #3e3535;
 }
 /** HEADER **/
-.logo {
-  position: relative;
-  margin-left: -71px;
-  margin-top: 33px;
-}
-.nav-item {
-  list-style: none;
-  margin-left: 40px;
-}
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 85px;
-  line-height: 90px;
-  padding: 0 93px;
-}
-.hamburger {
-  display: none;
-}
-.bar {
-  display: block;
-  width: 30px;
-  height: 3px;
-  margin: 5px auto;
-  transition: all 0.3s ease-in-out;
-  background-color: #1e652d;
-}
-.nav-list {
-  display: flex;
-  align-items: center;
-}
-.nav-link {
-  font-size: 16px;
-  color: #000000;
-}
-.nav-link:hover {
-  color: #2b8e40;
-  transition: 0.3s;
-}
-.navlist:hover {
-  background: #383838;
-  transition: 0.3s;
-}
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
-.hamburger.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-.hamburger.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-@media (max-width: 390px) {
-  .nav-list {
-    position: fixed;
-    left: -100%;
-    top: 83px;
-    flex-direction: column;
-    width: 100%;
-    height: 90%;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    z-index: 1;
-  }
-  .nav-list.active {
-    left: 0px;
-  }
-  .nav-list {
-    display: flex;
-    align-items: center;
-  }
-  .nav-item {
-    margin: 25px 0;
-  }
-  .hamburger {
-    display: block;
-    cursor: pointer;
-    margin-inline-end: -78px;
-  }
-  .bar {
-    display: block;
-    width: 30px;
-    height: 3px;
-    margin: 5px 16px;
-    transition: all 0.3s ease-in-out;
-    background-color: #1e652d;
-  }
-}
 /** END HEADER **/
 
 /** MAIN **/
 h2 {
   margin-left: 40px;
-  margin-top: 50px;
+  margin-top: 40px;
+  font-size: 38px;
 }
 .dropdown-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 40px 0px;
+  margin: 36px 0px;
 }
 .dropbtn {
-  background-color: #dab55d;
+  background-color: #7cbb57b7;
   color: #3e3535;
   padding: 14px;
   font-size: 16px;
@@ -128,21 +39,25 @@ h2 {
   align-items: center; /* Center items vertically */
   text-align: start;
   margin-bottom: -8px;
+  display: flex; /* Add display flex to the button */
 }
 .dropdown {
-  /*  position: relative;
-  display: inline-block; */
   margin-bottom: 20px;
 }
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  max-width: 306px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 0 0 4% 4%;
 }
+/* .dropdown:focus .dropdown-content {
+  display: block;
+  margin-top: 10px;
+  width: 330px;
+} */
 .dropdown-content a {
   color: #3e3535;
   padding: 12px 16px;
@@ -166,12 +81,15 @@ h2 {
   display: inline-block;
   padding: 3px;
   transform: rotate(45deg);
-  /* transition: transform 1.3s ease; */
-  margin-left: 200px;
+  transition: transform 0.3s ease; /* Added transition */
+  margin-left: 10px; /* Adjust margin to create space between text and arrow */
+  z-index: -2;
 }
-/* .dropdown.open .arrow {
-  transform: rotate(-135deg);
-} */
+/* Position the arrow at the end */
+.arrow.end {
+  margin-left: auto; /* Move arrow to the end */
+  margin-right: 10px; /* Add some margin to the right */
+}
 /******************* *******************/
 .mushroom_grid {
   display: grid;
@@ -229,7 +147,7 @@ h4 {
 .radio-row {
   display: flex;
   align-items: center;
-  margin-top: -30px;
+  margin-top: -38px;
   margin-bottom: 20px;
 }
 .radio-row input[type="radio"] {
@@ -280,7 +198,7 @@ input[type="submit"]:hover {
   gap: 10px;
   width: 20%;
   height: auto;
-  margin-left: 234px;
+  margin-left: 236px;
   margin-top: -69px;
   padding: 34px;
 }
@@ -301,7 +219,7 @@ input[type="submit"]:hover {
     margin-top: 30px;
   }
   h2 {
-    font-size: 30px;
+    font-size: 60px;
     margin-left: 216px;
     margin-top: 50px;
   }
@@ -309,10 +227,10 @@ input[type="submit"]:hover {
     flex-direction: row;
     justify-content: start;
     gap: 120px;
-    margin-left: 220px;
+    margin-left: 314px;
   }
   .dropbtn {
-    background-color: #dab55d;
+    background-color: #7cbb57b7;
     color: #3e3535;
     padding: 14px;
     font-size: 16px;
@@ -324,6 +242,7 @@ input[type="submit"]:hover {
     align-items: center; /* Center items vertically */
     text-align: start;
     margin-bottom: -8px;
+    margin-left: -94px;
   }
   .arrow {
     border: solid #3e3535;
@@ -396,10 +315,6 @@ input[type="submit"]:hover {
     }
   }
   .plantlink {
-    /*  top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; */
     text-align: center; /* Center the content horizontally */
     display: flex; /* Use flexbox for vertical centering */
     flex-direction: column;
@@ -416,7 +331,7 @@ input[type="submit"]:hover {
   h4 {
     color: #ffffff;
     margin-top: 30px;
-    margin-left: 112px;
+    margin-left: 172px;
   }
   .radio-row label {
     white-space: nowrap;
@@ -425,7 +340,7 @@ input[type="submit"]:hover {
   .contact_form form {
     color: #ffffff;
     flex-direction: row; /* Keep the direction as column for inner elements */
-    margin-left: 75px;
+    margin-left: 136px;
   }
   .contact_form .radio-row,
   .contact_form .input-row {
@@ -446,10 +361,9 @@ input[type="submit"]:hover {
     gap: 10px;
     width: 20%;
     height: auto;
-    margin-left: 1210px;
-    margin-top: -59px;
+    margin-left: 1150px;
+    margin-top: -99px;
     padding: 34px;
   }
 }
-
 /** END FOOTER **/
