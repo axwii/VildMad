@@ -1,4 +1,4 @@
-/* document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   var dropdowns = document.querySelectorAll(".dropdown");
 
   dropdowns.forEach(function (dropdown) {
@@ -6,7 +6,7 @@
       this.classList.toggle("open");
     });
   });
-}); */
+});
 
 /* document.addEventListener("DOMContentLoaded", function () {
   var dropdowns = document.querySelectorAll(".dropdown");
@@ -27,7 +27,7 @@
 }); */
 
 //burgemenu
-const hamburger = document.querySelector(".hamburger");
+/* const hamburger = document.querySelector(".hamburger");
 const navList = document.querySelector(".nav-list");
 
 hamburger.addEventListener("click", mobileMenu);
@@ -35,4 +35,4 @@ hamburger.addEventListener("click", mobileMenu);
 function mobileMenu() {
   hamburger.classList.toggle("active");
   navList.classList.toggle("active");
-}
+} */
