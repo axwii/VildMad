@@ -4,8 +4,8 @@ let plantTemplate, plantContainer;
 function init() {
   plantTemplate = document.querySelector(".plant_template");
   console.log("plant_template", plantTemplate);
-  plantContainer = document.querySelector(".plant_container");
-  console.log("plant_container", plantContainer);
+  plantContainer = document.querySelector(".mushroom_grid");
+  console.log("mushroom_grid", plantContainer);
   fetch("https://yldteeisdkdzafmhovam.supabase.co/rest/v1/VildMad", {
     method: "GET",
     headers: {
@@ -15,17 +15,15 @@ function init() {
   })
   .then((res) => res.json())
       .then((json) => showProducts(json));
-      console.log("init done");
 }
 
 function showProducts(plantJSON) {
   let plantClone;
   
   plantJSON.forEach((plant) => {
-    console.log("plant", plant);
     plantClone = plantTemplate.cloneNode(true).content;
     plantClone.querySelector(".plant_name").textContent = plant.title;
-    // plantClone.querySelector(".plant_image").src = plant.profile_image_src;
-    console.log("plantTitle", plant.title);
+    plantClone.querySelector(".plant_image").src = plant.profile_image_src;
+    plantContainer.appendChild(plantClone);
   });
 }
