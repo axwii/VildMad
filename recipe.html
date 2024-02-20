@@ -7,48 +7,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/recipe.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/recipe.css">
+
     <title>Recipe</title>
 </head>
 
 <body>
     <header>
-
+        <div>
+            <a href="index.html">
+                <img id="logo" src="img/logo.svg" alt="logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="plantList.html">Seasons</a></li>
+                <li><a href="recipeList.html">Recipes</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
     </header>
     <main>
-        <div>
-            <a href="recipeList.html">Tilbage</a>
 
-        </div>
         <div class="grid-container">
-            <div> <img src="webp/recipep.webp" alt="Picture of elderflowers" class="img1"></div>
+            <div> <img src="webp/recipep.webp" alt="Picture of elderflowers" id="img1"></div>
             <div> <img src="webp/blomst.webp" alt="Picture of elderflower" class="img2"></div>
         </div>
-        <div class="grid-icons">
+        <section id="grid-icons">
             <div class="icon">
-                <div> <img src="svg/kalender.svg" alt="icon of calender" class="icons"></div>
-                <h4>June</h4>
+                <div> <img src="svg/kalender.svg" alt="icon of calender" class="picture"></div>
+                <h5>June</h5>
             </div>
             <div class="icon">
-                <div> <img src="svg/kokkehue.svg" alt="icon of chefs hat" class="icons"></div>
-                <h4>Easy</h4>
+                <div> <img src="svg/kokkehue.svg" alt="icon of chefs hat" class="picture"></div>
+                <h5>Easy</h5>
             </div>
             <div class="icon">
-                <div> <img src="svg/person.svg" alt="icon of person" class="icons"></div>
-                <h4>4 pers.</h4>
+                <div> <img src="svg/person.svg" alt="icon of person" class="picture"></div>
+                <h5>4 pers.</h5>
             </div>
             <div class="icon">
-                <div> <img src="svg/time.svg" alt="icon of watch" class="icons"></div>
-                <h4>5 min.</h4>
+                <div> <img src="svg/time.svg" alt="icon of watch" class="picturet"></div>
+                <h5>5 min.</h5>
             </div>
-        </div>
+        </section>
         <h1>Japanese Rose Vinegar</h1>
-        <section>
+        <section id="section1">
             <div class="grid_text">
                 <div class="box_ing">
-                    <h3>Ingredients</h3>
+                    <h6>Ingredients</h6>
                     <nav>
                         <ul>
                             <li>
@@ -64,7 +77,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <h3>Equipment</h3>
+                    <h6>Equipment</h6>
                     <nav>
                         <ul>
                             <li>
@@ -77,7 +90,7 @@
                 </div>
 
                 <div class="directions">
-                    <h3>Directions</h3>
+                    <h6>Directions</h6>
                     <nav>
                         <ol>
                             <li>
@@ -101,6 +114,15 @@
 
             </div>
         </section>
+        <div class="pil">
+            <div class="pil1">
+
+                <a href="recipeList.html"><img src="svg/pil.svg" alt="Arrow for back button" class="pilen"></a>
+            </div>
+            <div class="pil2">
+                <a href="recipeList.html">Back</a>
+            </div>
+        </div>
     </main>
     <!-- FOOTER (BOTTOM website) -->
     <footer class="footer">
