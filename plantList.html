@@ -39,35 +39,53 @@
 
   <body>
     <!-- HEADER (TOP website) -->
-    <header></header>
+    <header>
+        <div>
+            <a href="index.html">
+                <img id="logo" src="img/logo.svg" alt="logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="plantList.html">Seasons</a></li>
+                <li><a href="recipeList.html">Recipes</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
     <!-- END HEADER -->
 
     <!-- MAIN (Center website) -->
     <main>
-        <h2>Spring</h2>
-        <div class="dropdown-container">
-            <div class="dropdown">
-                <button class="dropbtn">Season <span class="arrow"></span></button>
-                <div class="dropdown-content">
-                    <a href="plantList.html">Spring</a>
-                    <a href="plantList.html">Summer</a>
-                    <a href="plantList.html">Fall</a>
-                    <a href="plantList.html">Winter</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">Type <span class="arrow"></span></button>
-                <div class="dropdown-content">
-                    <a href="#">Algae</a>
-                    <a href="#">Beach Herbs</a>
-                    <a href="#">Bushes & Trees</a>
-                    <a href="#">Flowers</a>
-                    <a href="#">Herbs & Plants</a>
-                    <a href="#">Mushrooms</a>
-                </div>
-            </div>
+      <h2>Spring</h2>
+      <div class="dropdown-container">
+        <div class="dropdown">
+          <button class="dropbtn">Season <span class="arrow"></span></button>
+          <div class="dropdown-content">
+            <a href="plantList.html">Spring</a>
+            <a href="plantList.html">Summer</a>
+            <a href="plantList.html">Fall</a>
+            <a href="plantList.html">Winter</a>
+          </div>
         </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Type <span class="arrow"></span></button>
+          <div class="dropdown-content">
+            <a href="#">Algae</a>
+            <a href="#">Beach Herbs</a>
+            <a href="#">Bushes & Trees</a>
+            <a href="#">Flowers</a>
+            <a href="#">Herbs & Plants</a>
+            <a href="#">Mushrooms</a>
+          </div>
+        </div>
+      </div>
+      <section class="mushroom_grid"></section>
 
       <template class="plant_template">
         <article class="links col">
