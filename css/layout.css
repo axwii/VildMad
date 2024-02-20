@@ -1,12 +1,9 @@
 /*********************** index **********************/
-@media (min-width: 800px) {
-  #h2_map {
-    margin-left: 170px;
-  }
+@media (min-width: 768px) {
   h3 {
     margin-left: 170px;
   }
-  p {
+  #welcome_text {
     margin-left: 170px;
     margin-right: 170px;
   }
@@ -17,32 +14,71 @@
   .grid_1_1_1_1 {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    gap: 70px;
+    gap: 40px;
   }
-
   #spring {
-    width: 440px;
+    width: 420px;
     margin-left: 270px;
   }
   #summer {
-    width: 440px;
+    width: 420px;
   }
   #fall {
-    width: 440px;
+    width: 420px;
     margin-left: 270px;
   }
   #winter {
-    width: 440px;
+    width: 420px;
   }
 
-  .grid_1_2 {
+  .grid_1_1 {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
   }
-
+  #h2_map {
+    margin-left: 170px;
+    text-align: left;
+  }
   .map {
     margin-top: 190px;
     margin-left: 20px;
     margin-right: 50px;
+  }
+  #mapimage {
+    padding-right: 100px;
+    width: 95%;
+  }
+  #map_text {
+    margin-left: 150px;
+  }
+  #add_bottom {
+    margin-left: 50%;
+  }
+}
+
+/*********************** add **********************/
+@media (min-width: 768px) {
+  #h1_add {
+    text-align: left;
+    margin-left: 150px;
+  }
+  #add_welcome_text {
+    margin-left: 150px;
+  }
+  h2 {
+    margin-top: 100px;
+    margin-left: 370px;
+  }
+  #step_text {
+    margin-left: 370px;
+  }
+
+  .box {
+    margin-top: 60px;
+    margin-left: 80px;
+  }
+
+  .bottom {
+    padding-bottom: 300px;
   }
 }

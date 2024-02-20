@@ -1,8 +1,97 @@
-h1 {
-  color: aquamarine;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/************************* main *******************/
+main {
+  background-color: #fff7f6;
 }
 
 gmp-map {
   height: 400px;
-  width: 1
+  width: 1;
+}
+
+#h1_add {
+  font-family: "Roboto", sans-serif;
+  color: #3e3535;
+  font-size: 2.7rem;
+  text-align: left;
+  padding-left: 2rem;
+  padding-top: 3rem;
+  margin-bottom: 30px;
+}
+
+#add_welcome_text {
+  font-family: "Roboto", sans-serif;
+  line-height: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 1rem;
+  padding: 20px;
+}
+
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+h2 {
+  font-family: "Ribeye", serif;
+  color: #3e3535;
+  font-size: 1.8rem;
+  text-align: left;
+  margin-top: 70px;
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+
+#step_text {
+  font-family: "Roboto", sans-serif;
+  color: #3e3535;
+  line-height: 40px;
+  margin-left: 70px;
+  margin-bottom: 50px;
+}
+
+.box {
+  width: 300px; /* Ændr bredden efter behov */
+  height: 350px; /* Ændr højden efter behov */
+  background-color: white; /* Ændr farven efter behov */
+  border: 1px solid #000; /* Tilføj en streg rundt om kassen */
+  position: relative;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  border-radius: 1rem;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  color: #3e3535;
+  position: absolute; /* Gør positionen absolut for at placere teksten inde i boksen */
+  text-align: center;
+  top: 50%; /* Placer teksten i midten vertikalt */
+  left: 50%; /* Placer teksten i midten horisontalt */
+  transform: translate(-50%, -50%); /* Centrer teksten i forhold til dens egen størrelse */
+  margin-bottom: 20px;
+}
+
+.btn_top {
+  margin-top: 400px;
+}
+
+#upload_bottom {
+  background-color: #1e652d;
+  text-decoration: none;
+  color: #fff7f6;
+  font-family: "Roboto", sans-serif;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 13px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-left: 29%;
 }
