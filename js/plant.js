@@ -70,3 +70,7 @@ function showPlant(plantArray) {
     console.error("No plant data found");
   }
 }
+
+function goBack() {
+    window.history.back();
+  }
