@@ -14,7 +14,7 @@ function init() {
     },
   })
   .then((res) => res.json())
-      .then((json) => showProducts(json));
+  .then((json) => showProducts(json));
 }
 
 function showProducts(plantJSON) {
@@ -24,6 +24,7 @@ function showProducts(plantJSON) {
     plantClone = plantTemplate.cloneNode(true).content;
     plantClone.querySelector(".plant_name").textContent = plant.title;
     plantClone.querySelector(".plant_image").src = plant.profile_image_src;
+    plantClone.querySelector("a").href = "plant.html?id=" + plant.id;
     plantContainer.appendChild(plantClone);
   });
 }
