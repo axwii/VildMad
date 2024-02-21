@@ -44,7 +44,7 @@ a {
   margin-bottom: 0.8rem;
 }
 
-.img2 {
+.img2, .plant_image {
   border-radius: 100%;
   position: absolute;
   z-index: 1;
@@ -55,7 +55,7 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .img2 {
+  .img2, .plant_image {
     margin-left: 1.5rem;
     height: 7rem;
     width: 7rem;
@@ -68,7 +68,7 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .img2 {
+  .img2, .plant_image {
     margin-top: -11rem;
     height: 16rem;
     width: 16rem;
@@ -128,7 +128,7 @@ a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
-  .img2 {
+  .img2 .plant_image{
     margin-top: -9rem;
     height: 14rem;
     width: 14rem;
