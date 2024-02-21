@@ -183,8 +183,10 @@ input[type="submit"]:hover {
   }
   .radio-row label {
     white-space: nowrap;
-    margin-right: 25px;
+    margin-right: -60px;
+    margin-left: -55px;
   }
+
   .contact_form {
     display: flex;
     flex-direction: row;
@@ -202,6 +204,8 @@ input[type="submit"]:hover {
   .contact_form .radio-row,
   .contact_form .input-row {
     margin-bottom: 10px;
+    margin-left: -72px;
+    font-family: Roboto, serif;
   }
   .contact_form input[type="text"],
   .contact_form input[type="email"],
