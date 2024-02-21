@@ -200,7 +200,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 100px 0px;
-    padding: 0 150px;
+    padding: 0 182px;
   }
   .col1 h5 {
     font-size: 15px;
@@ -253,8 +253,8 @@ a {
     transition: 0.3s ease-in-out;
   }
   .profilesquare figure:hover img {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
+    -webkit-transform: scale(0.3);
+    transform: scale(1.5);
   }
 }
 

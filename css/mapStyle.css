@@ -47,7 +47,9 @@ h2 {
   margin-left: 70px;
   margin-bottom: 20px;
 }
-
+.h2map {
+  margin-left: 370px;
+}
 #step_text {
   font-family: "Roboto", sans-serif;
   color: #3e3535;

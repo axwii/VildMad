@@ -37,6 +37,34 @@ nav {
 menu a:hover {
   color: #075607;
 }
+/* ************** */
+.menu1 {
+  display: flex;
+  list-style: none;
+  margin: -40px;
+  padding: 0;
+}
+.menu1 li {
+  margin-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.menu1 a {
+  display: block;
+  padding: 10px;
+  color: #075607;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+.menu1 li:last-child {
+  margin-right: 0px;
+}
+.menu1 a:hover {
+  color: #075607;
+}
 .burger {
   width: 30px;
   height: 20px;
@@ -91,7 +119,46 @@ menu a:hover {
   nav.active .menu a:hover {
     color: #7bbf8a;
   }
+  /* ********* */
+  .menu1 {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+  nav.active .menu1 {
+    display: block;
+    background-color: #e5e4e3;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    /*  z-index: 1; */
+  }
+  nav.active .menu1 li {
+    margin: 10px 20px;
+  }
+  nav.active .menu1 a {
+    font-size: 24px;
+  }
+  nav.active .menu1 a:hover {
+    color: #7bbf8a;
+  }
 }
+
 /*********************** logo *************************/
 #logo {
   width: 90px;
@@ -100,6 +167,38 @@ menu a:hover {
   margin-top: 20px;
   margin-left: 40px;
   margin-bottom: 20px;
+}
+/*********************** pil *************************/
+#pil {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 10rem;
+  margin-left: 2.5rem;
+}
+.pilen {
+  width: 45%;
+}
+@media (min-width: 768px) {
+  #pil {
+    display: flex;
+    margin-top: -7rem;
+    margin-bottom: 10rem;
+    margin-left: 11rem;
+  }
+  .pilen {
+    width: 45%;
+  }
+  #pill {
+    display: flex;
+    margin-top: 10rem;
+    margin-bottom: -2rem;
+    margin-left: 11rem;
+  }
+  .pil2a a {
+    text-decoration: none;
+    font-family: roboto, serif;
+    color: #3e3535;
+  }
 }
 /** mobil **/
 /** START FOOTER **/
@@ -121,6 +220,7 @@ h4 {
   align-items: center;
   margin-top: -38px;
   margin-bottom: 20px;
+  font-family: Roboto, serif;
 }
 .radio-row input[type="radio"] {
   margin-right: 6px;

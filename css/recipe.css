@@ -13,8 +13,9 @@ main {
 }
 
 h1 {
-  margin-top: 8rem;
+  margin-top: 4rem;
   font-family: "Roboto", sans-serif;
+  margin-left: 140px;
 }
 
 h6 {
@@ -29,12 +30,6 @@ h5 {
   color: black;
 }
 
-a {
-  text-decoration: none;
-  color: #075607;
-  font-weight: bolder;
-}
-
 #img1 {
   width: 100%;
   height: auto;
@@ -43,7 +38,8 @@ a {
   margin-bottom: 0.8rem;
 }
 
-.img2, .plant_image {
+.img2,
+.plant_image {
   border-radius: 100%;
   position: absolute;
   z-index: 1;
@@ -54,7 +50,8 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .img2, .plant_image {
+  .img2,
+  .plant_image {
     margin-left: 1.5rem;
     height: 7rem;
     width: 7rem;
@@ -67,15 +64,18 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .img2, .plant_image {
+  .img2,
+  .plant_image {
     margin-top: -11rem;
-    height: 16rem;
-    width: 16rem;
+    height: 12rem;
+    width: 12rem;
+    margin-left: 233px;
   }
   #img1 {
-    width: 100%;
+    width: 82%;
     height: 20rem;
     object-fit: cover;
+    margin-left: 138px;
   }
   #pil {
     display: flex;
@@ -89,6 +89,7 @@ a {
     grid-template-columns: 1fr 2fr;
     text-align: left;
     grid-column-gap: 60px;
+    margin-left: 140px;
   }
 
   .box_ing {
@@ -127,13 +128,12 @@ a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
-  .img2 .plant_image{
+  .img2 .plant_image {
     margin-top: -9rem;
     height: 14rem;
     width: 14rem;
   }
 }
-
 .box_ing {
   background-color: #ebe7d7;
   border-radius: 1rem;
@@ -150,6 +150,7 @@ a {
   display: flex;
   padding-left: 12rem;
   justify-content: right;
+  width: 1200px;
 }
 
 .icon {

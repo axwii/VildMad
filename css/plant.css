@@ -11,6 +11,13 @@
 }
 
 @media screen and (min-width: 768px) {
+  .grid_text1 {
+    display: flex;
+    grid-template-columns: 1fr 2fr;
+    text-align: left;
+    grid-column-gap: 60px;
+  }
+
   #section2 p {
     font-family: "Roboto", sans-serif;
     margin-left: 50px;
@@ -35,13 +42,6 @@
   .directions1 {
     margin-top: 5.5rem;
     flex: 1;
-  }
-
-  .grid_text1 {
-    display: flex;
-    grid-template-columns: 1fr 2fr;
-    text-align: left;
-    grid-column-gap: 60px;
   }
 }
 
