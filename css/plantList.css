@@ -333,50 +333,5 @@ input[type="submit"]:hover {
     flex-direction: column;
     justify-content: center;
   }
-  /**********************/
-  footer {
-    background-color: #4f8d9d;
-    max-width: 100%;
-    height: auto;
-    padding: 7px;
-  }
-  .footer h3,
-  h4 {
-    color: #ffffff;
-    margin-top: 30px;
-    margin-left: 172px;
-  }
-  .radio-row label {
-    white-space: nowrap;
-    margin-right: 25px;
-  }
-  .contact_form form {
-    color: #ffffff;
-    flex-direction: row; /* Keep the direction as column for inner elements */
-    margin-left: 136px;
-  }
-  .contact_form .radio-row,
-  .contact_form .input-row {
-    /* display: flex;
-    flex-direction: row;
-    align-items: center; */
-    margin-bottom: 10px; /* Add margin bottom to create space between rows */
-  }
-  .contact_form input[type="text"],
-  .contact_form input[type="email"],
-  .contact_form input[type="submit"] {
-    margin-bottom: 0; /* Reset bottom margin */
-    margin-right: 10px; /* Add right margin between form items */
-  }
-  .socialnet {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    width: 20%;
-    height: auto;
-    margin-left: 1150px;
-    margin-top: -99px;
-    padding: 34px;
-  }
 }
-/** END FOOTER **/
+/**********************/
