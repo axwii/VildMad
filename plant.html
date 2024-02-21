@@ -6,149 +6,114 @@
     <meta name="robots" content="noindex">
     <meta name="description" content="Plants_to_forage_in_your_city">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How_to_forage_your_city_produce">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Ribeye&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Ribeye&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/recipeList.css" />
     <link rel="stylesheet" href="css/recipe.css" />
     <link rel="stylesheet" href="css/plant.css" />
     <title>Product</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <div>
-        <a href="index.html">
-          <img id="logo" src="img/logo.svg" alt="logo" />
-        </a>
-      </div>
-      <nav>
-        <ul class="menu">
-          <li><a href="plantList.html">Seasons</a></li>
-          <li><a href="recipeList.html">Recipes</a></li>
-          <li><a href="map.html">Add</a></li>
-        </ul>
-        <div class="burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+        <div>
+            <a href="index.html">
+                <img id="logo" src="img/logo.svg" alt="logo" />
+            </a>
         </div>
-      </nav>
+        <nav>
+            <ul class="menu">
+                <li><a href="plantList.html">Seasons</a></li>
+                <li><a href="recipeList.html">Recipes</a></li>
+                <li><a href="map.html">Add</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
     </header>
     <main>
-      <div class="grid-container">
-        <div>
-          <img
-            src="img/Byen-fuld-ret.webp"
-            alt="Picture of elderflowers"
-            id="img1"
-          />
+        <div class="grid-container">
+            <div>
+                <img src="img/Byen-fuld-ret.webp" alt="Picture of elderflowers" id="img1" />
+            </div>
+            <div>
+                <img src="webp/blomst.webp" alt="Picture of elderflower" class="plant_image" />
+            </div>
         </div>
-        <div>
-          <img
-            src="webp/blomst.webp"
-            alt="Picture of elderflower"
-            class="plant_image"
-          />
-        </div>
-      </div>
 
-      <h1 class="plant_name">Elderflower</h1>
-      <section id="section2">
-        <div class="grid_text1">
-          <div class="box_ing1">
-            <h6>Fun fact</h6>
-            <ul class="plant_fun_fact">
-            </ul>
-          </div>
-
-          <div class="directions1">
-            <h6>Where to find it</h6>
-            <ul class="plant_where_to_find">
-            </ul>
-            <h6>How to spot it</h6>
-            <ul class="plant_how_to_spot">
-            </ul>
-            <h6>How to pick it</h6>
-            <ul class="plant_how_to_pick">
-            </ul>
-          </div>
+        <h1 class="plant_name">Elderflower</h1>
+        <section id="section2">
+            <div class="grid_text1">
+                <div class="box_ing1">
+                    <h6>Fun fact</h6>
+                    <ul class="plant_fun_fact">
+                    </ul>
+                </div>
+                <div class="directions1">
+                    <h6>Where to find it</h6>
+                    <ul class="plant_where_to_find">
+                    </ul>
+                    <h6>How to spot it</h6>
+                    <ul class="plant_how_to_spot">
+                    </ul>
+                    <h6>How to pick it</h6>
+                    <ul class="plant_how_to_pick">
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div>
+            <a class="button1" href="recipeList.html" target="_blank">Find delicious recipe here!</a>
         </div>
-      </section>
-      <div>
-        <a
-          class="button1"
-          href="recipeList.html"
-          target="_blank"
-          >Find delicious recipe here!</a
-        >
-      </div>
-      <div id="pil">
-        <div class="pil1">
-          <a href="recipeList.html"
-            ><img src="svg/pil.svg" alt="Arrow for back button" class="pilen"
-          /></a>
+        <div id="pill">
+            <div class="pil1">
+                <a href="recipeList.html"><img src="svg/pil.svg" alt="Arrow for back button" class="pilen" /></a>
+            </div>
+            <div class="pil2a">
+                <a href="#" onclick="goBack()">Back</a>
+            </div>
         </div>
-        <div class="pil2">
-          <a href="#" onclick="goBack()">Back</a>
-        </div>
-      </div>
     </main>
 
     <!-- FOOTER (BOTTOM website) -->
     <footer class="footer">
-      <h3>NEWSLETTER</h3>
-      <h4>Class:</h4>
-      <div class="contact_form">
-        <form name="contact" method="POST" data-netlify="true">
-          <div class="radio-row">
-            <input
-              type="radio"
-              id="7th"
-              name="fav_language"
-              value="7th_grade"
-            />
-            <label for="7th">7th. Grade</label>
-            <input
-              type="radio"
-              id="8th"
-              name="fav_language"
-              value="8th_grade"
-            />
-            <label for="8th">8th. Grade</label>
-            <input
-              type="radio"
-              id="9th"
-              name="fav_language"
-              value="9th_grade"
-            />
-            <label for="9th">9th. Grade</label>
-          </div>
-          <input type="text" id="fullname" name="name" placeholder="NAME" />
-          <input
-            type="email"
-            id="email"
-            name="emailaddress"
-            placeholder="E-MAIL"
-          />
-          <input type="submit" value="SUBSCRIBE" />
-        </form>
-      </div>
-      <div class="wrap_footer">
-        <div class="socialnet">
-          <img src="img/facebook.svg" alt="facebook" />
-          <img src="img/instagram.svg" alt="instagram" />
+        <h3>NEWSLETTER</h3>
+        <h4>Class:</h4>
+        <div class="contact_form">
+            <form name="contact" method="POST" data-netlify="true">
+                <div class="radio-row">
+                    <input type="radio" id="7th" name="fav_language" value="7th_grade" />
+                    <label for="7th">7th. Grade</label>
+                    <input type="radio" id="8th" name="fav_language" value="8th_grade" />
+                    <label for="8th">8th. Grade</label>
+                    <input type="radio" id="9th" name="fav_language" value="9th_grade" />
+                    <label for="9th">9th. Grade</label>
+                </div>
+                <input type="text" id="fullname" name="name" placeholder="NAME" />
+                <input type="email" id="email" name="emailaddress" placeholder="E-MAIL" />
+                <input type="submit" value="SUBSCRIBE" />
+            </form>
         </div>
-      </div>
+        <div class="wrap_footer">
+            <div class="socialnet">
+                <img src="img/facebook.svg" alt="facebook" />
+                <img src="img/instagram.svg" alt="instagram" />
+            </div>
+        </div>
     </footer>
     <!-- FOOTER END -->
     <script src="js/plant.js"></script>
-  </body>
+</body>
+
 </html>
