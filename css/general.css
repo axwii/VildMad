@@ -179,11 +179,20 @@ input[type="submit"]:hover {
   h4 {
     color: #ffffff;
     margin-top: 30px;
-    margin-left: 112px;
+    margin-left: 160px;
   }
   .radio-row label {
     white-space: nowrap;
     margin-right: 25px;
+  }
+  .contact_form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #ffffff;
+    padding: 35px;
+    font-size: 14px;
+    margin-left: 50px;
   }
   .contact_form form {
     color: #ffffff;
@@ -206,7 +215,7 @@ input[type="submit"]:hover {
     gap: 10px;
     width: 20%;
     height: auto;
-    margin-left: 1210px;
+    margin-left: 1150px;
     margin-top: -59px;
     padding: 34px;
   }
