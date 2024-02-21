@@ -142,7 +142,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Ribeye", serif;
   color: #3e3535;
   font-size: 1.5rem;
   margin-top: 120px;
@@ -164,6 +164,7 @@ h3 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
+  margin-left: -25px;
 }
 
 #spring {
@@ -221,9 +222,10 @@ h3 {
 }
 
 .map {
-  margin-top: 20px;
-  margin-left: 50px;
-  margin-right: 50px;
+  height: 266px;
+  margin-top: 117px;
+  margin-left: 37px;
+  width: 314px;
 }
 
 #mapimage {

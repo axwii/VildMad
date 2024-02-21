@@ -40,9 +40,10 @@
     text-align: left;
   }
   .map {
-    margin-top: 190px;
-    margin-left: 20px;
-    margin-right: 50px;
+    height: 341px;
+    margin-top: 221px;
+    margin-left: 37px;
+    width: 500px;
   }
   #mapimage {
     padding-right: 100px;
