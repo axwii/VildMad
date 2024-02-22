@@ -1,3 +1,22 @@
+const parameter = new URLSearchParams(window.location.search);
+const season = parameter.get("season");
+
+document.querySelector(".list_title_season").textContent = season;
+
+const dropbtns = document.querySelectorAll(".dropbtn, .dropbtn");
+
+dropbtns.forEach(dropbtn => {
+  if (season === "Spring") {
+    dropbtn.style.backgroundColor = "#7cbb57b7";
+  } else if (season === "Summer") {
+    dropbtn.style.backgroundColor = "#dab55db7";
+  } else if (season === "Autumn") {
+    dropbtn.style.backgroundColor = "#d74918b8";
+  } else if (season === "Winter") {
+    dropbtn.style.backgroundColor = "#599FB0b7";
+  }
+});
+
 // Eventlistener for når DOM-indholdet er indlæst, der udløser 'init'-funktionen
 window.addEventListener("DOMContentLoaded", init);
 // Deklaration af globale variabler for plante-skabelon og plante-container
@@ -14,23 +33,24 @@ function init() {
   console.log("mushroom_grid", plantContainer);
 
   // Hent data fra et REST API-endepunkt ved hjælp af Supabase
-  fetch("https://yldteeisdkdzafmhovam.supabase.co/rest/v1/VildMad", {
-    method: "GET",
-    headers: {
-      // Tilføj API-nøgle til godkendelse
-      apikey:
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlsZHRlZWlzZGtkemFmbWhvdmFtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc2OTMxMjcsImV4cCI6MjAyMzI2OTEyN30.rBkt48sM5FB_fV7xA2C5pUvXa-zxsEctFs4lbSFcMiI",
-    },
-  })
-  // Håndterer svaret som JSON og kalder 'showProducts'-funktionen med dataen
-  .then((res) => res.json())
-  .then((json) => showProducts(json));
+  const apiKey =
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlsZHRlZWlzZGtkemFmbWhvdmFtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc2OTMxMjcsImV4cCI6MjAyMzI2OTEyN30.rBkt48sM5FB_fV7xA2C5pUvXa-zxsEctFs4lbSFcMiI";
+  const url = `https://yldteeisdkdzafmhovam.supabase.co/rest/v1/VildMad?apikey=${apiKey}`;
+
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+      const springData = data.filter((item) => item.season.includes(season));
+      showProducts(springData);
+      console.log(springData);
+    })
+    .catch((error) => console.error('Error fetching data:', error));
 }
 
 // Funktion til at vise produkter på hjemmesiden
 function showProducts(plantJSON) {
   let plantClone;
-  
+
   // Itererer gennem hver planteobjekt i JSON-dataen
   plantJSON.forEach((plant) => {
     // Kloner plante-skabelonen for at oprette en ny planteindgang
