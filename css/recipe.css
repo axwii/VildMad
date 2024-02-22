@@ -78,13 +78,19 @@ h5 {
     object-fit: cover;
     margin-left: 138px;
   }
-  #pil {
+  #pill {
     display: flex;
     margin-top: 2.5rem;
     margin-bottom: 1.5rem;
     margin-left: 1rem;
   }
-
+  .pil1 {
+  }
+  .pil2aa a {
+    text-decoration: none;
+    font-family: roboto, serif;
+    color: #3e3535;
+  }
   .grid_text {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -168,12 +174,18 @@ h5 {
   margin-top: -0.2rem;
 }
 
-#pil {
+#pill {
   display: flex;
   margin-top: 1rem;
   margin-bottom: 0rem;
 }
-
+.pil1 {
+}
+.pil2aa a {
+  text-decoration: none;
+  font-family: roboto, serif;
+  color: #3e3535;
+}
 .pilen {
   width: 50%;
 }
