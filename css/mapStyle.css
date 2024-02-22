@@ -17,9 +17,9 @@ gmp-map {
 #h1_add {
   font-family: "Roboto", sans-serif;
   color: #3e3535;
-  font-size: 2.7rem;
+  font-size: 1.6rem;
   text-align: left;
-  padding-left: 2rem;
+  padding-left: 2.6rem;
   padding-top: 3rem;
   margin-bottom: 30px;
 }
@@ -48,7 +48,7 @@ h2 {
   margin-bottom: 20px;
 }
 .h2map {
-  margin-left: 370px;
+  margin-left: 70px;
 }
 #step_text {
   font-family: "Roboto", sans-serif;
@@ -96,4 +96,31 @@ h2 {
   padding-right: 30px;
   padding-left: 30px;
   margin-left: 29%;
+}
+#pill {
+  display: flex;
+  margin-top: 10rem;
+  margin-bottom: -2rem;
+  margin-left: 2.7rem;
+}
+.pil1 {
+}
+.pil2a a {
+  text-decoration: none;
+  font-family: roboto, serif;
+  color: #3e3535;
+}
+@media (min-width: 768px) {
+  .h2map {
+    margin-left: 370px;
+  }
+  #h1_add {
+    font-family: "Roboto", sans-serif;
+    color: #3e3535;
+    font-size: 2.7rem;
+    text-align: left;
+    padding-left: 2rem;
+    padding-top: 3rem;
+    margin-bottom: 30px;
+  }
 }
