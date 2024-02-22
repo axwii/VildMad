@@ -82,14 +82,21 @@
   .bottom {
     padding-bottom: 194px;
   }
+  .footer1 {
+    background-color: #4f8d9d;
+    max-width: 100%;
+    height: 297px;
+    padding: 7px;
+  }
   .footer1 h3,
   .footer1 h4 {
     margin-left: 177px;
     color: #ffffff;
+    margin-top: 26px;
   }
   .socialnet1 {
-    margin-left: 1217px;
-    margin-top: -36px;
+    margin-left: 1190px;
+    margin-top: -76px;
     margin-bottom: 10px;
   }
 }
