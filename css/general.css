@@ -5,27 +5,32 @@ header {
   position: sticky;
   background-color: #fff7f6;
 }
+
 nav {
   display: flex;
   align-items: center;
   margin-right: 50px;
 }
+
 .nav1 {
   display: flex;
   align-items: center;
   margin-right: 50px;
 }
+
 .menu {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .menu li {
   margin-right: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
 .menu a {
   display: block;
   padding: 10px;
@@ -36,12 +41,15 @@ nav {
   transition: color 0.3s;
   text-align: end;
 }
+
 .menu li:last-child {
   margin-right: 0px;
 }
+
 menu a:hover {
   color: #075607;
 }
+
 /* ************** */
 .menu1 {
   display: flex;
@@ -49,11 +57,13 @@ menu a:hover {
   margin: -40px;
   padding: 0;
 }
+
 .menu1 li {
   margin-right: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
 .menu1 a {
   display: block;
   padding: 10px;
@@ -64,17 +74,21 @@ menu a:hover {
   transition: color 0.3s;
   text-align: end;
 }
+
 .menu1 li:last-child {
   margin-right: 0px;
 }
+
 .menu1 a:hover {
   color: #075607;
 }
+
 .burger {
   width: 30px;
   height: 20px;
   cursor: pointer;
 }
+
 .burger .line {
   width: 100%;
   height: 2px;
@@ -82,6 +96,7 @@ menu a:hover {
   transition: 0.2s linear;
   background-color: #075607;
 }
+
 .burger {
   display: none;
 }
@@ -180,44 +195,48 @@ menu a:hover {
   margin-bottom: 10rem;
   margin-left: 2.5rem;
 }
+
 .pilen {
   width: 45%;
 }
+
 @media (min-width: 768px) {
   .nav1 {
     display: flex;
     align-items: center;
     margin-right: 10px;
   }
-  #pil {
+  .nav1a {
     display: flex;
-    margin-top: -7rem;
-    margin-bottom: 10rem;
-    margin-left: 11rem;
+    align-items: center;
+    margin-right: 50px;
   }
   .pilen {
     width: 45%;
   }
-  #pill {
-    display: flex;
-    margin-top: 10rem;
-    margin-bottom: -2rem;
-    margin-left: 11rem;
+  #pil {
+    margin-top: 9rem;
+    margin-bottom: 10rem;
+    margin-left: 9rem;
+    font-weight: 900;
+    max-width: 5.5%;
   }
-  .pil2a a {
+  .pil2 a {
     text-decoration: none;
     font-family: roboto, serif;
-    color: #3e3535;
+    color: #075607;
   }
 }
+
 /** mobil **/
 /** START FOOTER **/
-footer {
+s footer {
   background-color: #4f8d9d;
   max-width: 100%;
   height: auto;
   padding: 7px;
 }
+
 .footer h3,
 h4 {
   color: #ffffff;
@@ -225,6 +244,7 @@ h4 {
   margin-left: 35px;
   font-family: Roboto, serif;
 }
+
 .radio-row {
   display: flex;
   align-items: center;
@@ -232,15 +252,18 @@ h4 {
   margin-bottom: 20px;
   font-family: Roboto, serif;
 }
+
 .radio-row input[type="radio"] {
   margin-right: 6px;
   margin-top: 16px;
   max-width: 20px;
 }
+
 .radio-row label {
   white-space: nowrap;
   margin-right: 10px;
 }
+
 .contact_form {
   display: flex;
   flex-direction: row;
@@ -249,6 +272,7 @@ h4 {
   padding: 35px;
   font-size: 14px;
 }
+
 .contact_form input {
   padding: 12px;
   border: 1px solid #ccc;
@@ -257,6 +281,7 @@ h4 {
   margin-bottom: 16px;
   width: 303px;
 }
+
 input[type="submit"] {
   display: flex;
   flex-direction: column;
@@ -270,10 +295,12 @@ input[type="submit"] {
   max-width: 134px;
   margin-top: 16px;
 }
+
 input[type="submit"]:hover {
   background-color: #2b8e40;
   color: #e3e3e3;
 }
+
 .socialnet {
   display: flex;
   flex-direction: row;

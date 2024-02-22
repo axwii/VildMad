@@ -19,14 +19,12 @@
     margin-left: 10px;
     margin-top: 10px;
   }
-
   #section2 p {
     font-family: "Roboto", sans-serif;
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 1rem;
   }
-
   .box_ing1 {
     /* grid-column: 1; */
     margin-top: 7rem;
@@ -42,7 +40,6 @@
     flex: 1;
     margin-left: 138px;
   }
-
   #arrow {
     display: flex;
     margin-top: 9rem;
@@ -52,9 +49,10 @@
   .pil2a a {
     text-decoration: none;
     font-family: roboto, serif;
-    color: #3e3535;
+    color: #075607;
   }
 }
+
 .button1 {
   color: #ebe7d7;
   padding: 15px 20px;

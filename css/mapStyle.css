@@ -7,6 +7,7 @@
 /************************* main *******************/
 main {
   background-color: #fff7f6;
+  height: 1800px;
 }
 
 gmp-map {
@@ -50,6 +51,7 @@ h2 {
 .h2map {
   margin-left: 70px;
 }
+
 #step_text {
   font-family: "Roboto", sans-serif;
   color: #3e3535;
@@ -97,19 +99,44 @@ h2 {
   padding-left: 30px;
   margin-left: 29%;
 }
-#pill {
-  display: flex;
-  margin-top: 10rem;
-  margin-bottom: -2rem;
-  margin-left: 2.7rem;
+
+#pil {
+  margin-top: 9rem;
+  margin-bottom: 2rem;
+  margin-left: 9rem;
+  font-weight: 900;
+  max-width: 1.5%;
 }
-.pil1 {
-}
+
+.pil1 a,
 .pil2a a {
   text-decoration: none;
   font-family: roboto, serif;
-  color: #3e3535;
+  color: #075607;
 }
+
+.footera {
+  background-color: #4f8d9d;
+  max-width: 100%;
+  height: auto;
+  padding: 7px;
+  margin-top: -90px;
+}
+
+.footera h3,
+h4 {
+  color: #ffffff;
+  margin-top: 30px;
+  margin-left: 172px;
+  font-family: Roboto, serif;
+}
+.footera h3 {
+  color: #ffffff;
+  margin-top: 30px;
+  margin-left: 35px;
+  font-family: Roboto, serif;
+}
+
 @media (min-width: 768px) {
   .h2map {
     margin-left: 370px;
@@ -122,5 +149,49 @@ h2 {
     padding-left: 2rem;
     padding-top: 3rem;
     margin-bottom: 30px;
+  }
+  .footera {
+    background-color: #4f8d9d;
+    max-width: 100%;
+    height: auto;
+    padding: 7px;
+    margin-top: -190px;
+  }
+  .footera h3,
+  h4 {
+    color: #ffffff;
+    margin-top: 30px;
+    margin-left: 172px;
+    font-family: Roboto, serif;
+  }
+  .radio-row label {
+    white-space: nowrap;
+    margin-right: 25px;
+  }
+  .contact_form form {
+    color: #ffffff;
+    flex-direction: row;
+    margin-left: 136px;
+  }
+  .contact_form .radio-row,
+  .contact_form .input-row {
+    margin-bottom: 10px;
+    font-family: Roboto, serif;
+  }
+  .contact_form input[type="text"],
+  .contact_form input[type="email"],
+  .contact_form input[type="submit"] {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  .socialnet {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 20%;
+    height: auto;
+    margin-left: 1150px;
+    margin-top: -99px;
+    padding: 34px;
   }
 }

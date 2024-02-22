@@ -6,22 +6,26 @@
   text-decoration: none;
   list-style: none;
 }
+
 /** BODY **/
 body {
   background-color: #fff7f6;
   color: #3e3535;
   font-family: Roboto;
 }
+
 /** HEADER **/
 .logo {
   position: relative;
   margin-left: -71px;
   margin-top: 33px;
 }
+
 .nav-item {
   list-style: none;
   margin-left: 40px;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -30,9 +34,11 @@ body {
   line-height: 90px;
   padding: 0 93px;
 }
+
 .hamburger {
   display: none;
 }
+
 .bar {
   display: block;
   width: 30px;
@@ -41,31 +47,39 @@ body {
   transition: all 0.3s ease-in-out;
   background-color: #1e652d;
 }
+
 .nav-list {
   display: flex;
   align-items: center;
 }
+
 .nav-link {
   font-size: 16px;
   color: #000000;
 }
+
 .nav-link:hover {
   color: #2b8e40;
   transition: 0.3s;
 }
+
 .navlist:hover {
   background: #383838;
   transition: 0.3s;
 }
+
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
+
 .hamburger.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
+
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
+
 @media (max-width: 768px) {
   .nav-list {
     position: fixed;
@@ -111,6 +125,7 @@ h2 {
   font-size: 38px;
   margin: 40px 0 30px 37px;
 }
+
 /******************* *******************/
 .mushroom_grid {
   display: grid;
@@ -118,6 +133,7 @@ h2 {
   margin-bottom: 100px;
   padding: 0 27px;
 }
+
 .col1 h5 {
   font-size: 15px;
   word-wrap: break-word; /* or word-break: break-all; */
@@ -125,6 +141,7 @@ h2 {
   text-align: start;
   margin-left: 0px;
 }
+
 .col1 {
   display: flex;
   justify-content: center; /*Center children vertically*/
@@ -132,9 +149,11 @@ h2 {
   padding-bottom: 40px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.436);
 }
+
 .links {
   text-align: center; /* Center both image and text horizontally */
 }
+
 .profilesquare img {
   max-width: 90%;
   height: auto;
@@ -142,8 +161,13 @@ h2 {
   border-radius: 7%;
   margin-bottom: 10px;
 }
+
 a {
-  color: #3e3535;
+  color: #075607;
+  font-weight: bolder;
+}
+
+.pil22 {
 }
 
 @media (min-width: 768px) {

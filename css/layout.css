@@ -10,7 +10,6 @@
   #text_map {
     margin-right: 0px;
   }
-
   .grid_1_1_1_1 {
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -73,12 +72,10 @@
   #step_text {
     margin-left: 370px;
   }
-
   .box {
     margin-top: 60px;
     margin-left: 50px;
   }
-
   .bottom {
     padding-bottom: 194px;
   }
