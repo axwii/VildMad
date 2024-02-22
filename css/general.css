@@ -10,6 +10,11 @@ nav {
   align-items: center;
   margin-right: 50px;
 }
+.nav1 {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
 .menu {
   display: flex;
   list-style: none;
@@ -179,6 +184,11 @@ menu a:hover {
   width: 45%;
 }
 @media (min-width: 768px) {
+  .nav1 {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
   #pil {
     display: flex;
     margin-top: -7rem;
@@ -280,6 +290,12 @@ input[type="submit"]:hover {
 /** START FOOTER **/
 @media (min-width: 768px) {
   footer {
+    background-color: #4f8d9d;
+    max-width: 100%;
+    height: auto;
+    padding: 7px;
+  }
+  .footer1 {
     background-color: #4f8d9d;
     max-width: 100%;
     height: auto;
