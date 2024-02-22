@@ -324,3 +324,9 @@ input[type="submit"]:hover {
   }
 }
 /** END FOOTER **/
+
+.tak_form {
+  margin-top: 60px;
+  margin-left: 30px;
+  font-size: 30px;
+}

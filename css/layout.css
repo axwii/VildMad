@@ -82,4 +82,14 @@
   .bottom {
     padding-bottom: 194px;
   }
+  .footer1 h3,
+  .footer1 h4 {
+    margin-left: 177px;
+    color: #ffffff;
+  }
+  .socialnet1 {
+    margin-left: 1217px;
+    margin-top: -36px;
+    margin-bottom: 10px;
+  }
 }
